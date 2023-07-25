@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+
+}
+
+.hamburger_menu {
+    height: fit-content;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.293);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.356);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    padding: 100px 30px 50px 30px;
+    transform: translateX(-310px);
+    transition-duration: 600ms;
+
+}
+
+.hamburger_menu ul {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: flex-start;
+    margin-left: 0px;
+    /* margin-top: 100px; */
+    gap: 30px;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.close {
+    font-size: 30px !important;
+    margin-top: 12px !important;
+    margin-left: -60px;
+    z-index: 2;
+    visibility: hidden;
+
+}
+
+.profile {
+    width: 1366px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    border: 2px solid #7f99ee;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.profile_left .profile_cover {
+    text-align: center;
+    border-top-left-radius: 20px;
+    height: 270px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), 70%, rgba(255, 255, 255, 0.7)), url('../images/slider_01-1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.9;
+    position: relative;
+}
+
+.profile_cover .edit_profile {
+    border-radius: 20px;
+    padding: 0px 10px;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    color: black;
+}
+
+.profile_left .save {
+    padding: 0px 10px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    cursor: pointer;
+    padding:6px 20px 8px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    visibility: hidden;
+}
+
+
+.profile_left .img span {
+    background-color: lightgray;
+    border-radius: 50%;
+    padding: 0px 30px;
+    font-size: 150px;
+    color: white;
+    outline-offset: 3px;
+    border: 3px solid white;
+    margin-left: -10px;
+    position: absolute;
+    top: 120px;
+    left: 140px;
+}
+
+.img .name {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 0px 0px;  
+    text-align: right;
+    resize: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.img .role {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 0px 0px;  
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+.img input::placeholder {
+    color: white;
+    font-size: 18px;
+    
+}
+
+.summary {
+    color: white;
+    font-weight: bold;
+    padding: 0px 0px 5px 10px;
+}
+.summary textarea {
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.086);
+    width: 100%;
+    padding: 10px 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    resize: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.skills {
+    color: white;
+    font-weight: bold;
+    padding: 0px 0px 5px 10px;
+}
+
+.skills .skillsearch {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.skills .skillsearch::placeholder {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.skills .skillbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+.skills .skill_btn {
+    background-color: rgba(255, 255, 255, 0.093);
+    margin-top: 5px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    padding: 1px 5px;
+}
+
+.skillbox .skill_btn input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 70px;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile_right {
+    display: grid;
+    padding: 10px 15px;
+    gap: 30px;
+
+}
+
+.detail {
+    display: grid;
+    gap: 10px;
+}
+
+.detail .university {
+    outline: none;
+    background-color: transparent;
+    width: 200px;
+    height: fit-content;
+    border: none;
+    text-align: center;  
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    resize: none;
+    text-align: left;
+}
+
+.detail .university::placeholder {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+.detail input::placeholder {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.resume .upload_btn, button {
+    padding: 6px 20px 8px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: white;
+    color:black;
+    border: 2px outset buttonborder;
+}
+
+.detail input {
+    width: 150px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+input[type=file] {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+If profile pic is a picture instead of icon
+ .profile .img{
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    text-align: center;
+    padding-top: 10px;
+    color:white;
+    background-color: lightgray;
+    width: 160px;
+    height: 160px;
+}
+
+.img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+} */

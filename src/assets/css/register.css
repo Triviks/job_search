@@ -1,0 +1,99 @@
+.container .registerr {
+    width: 70%; 
+    display:block;
+    color:white;
+    margin: auto;
+} 
+ 
+.container .registerr img{
+     width:70px;
+     display:block;
+     margin:auto;
+     height:75px;
+     margin: auto;
+}
+
+.container .registerr .detail {
+    display:grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    /* margin-bottom: 40px; */
+}
+
+.container label{
+    display:inline-block;
+    margin-top: 15px;
+    margin-bottom: -30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container .registerr button{
+    width:25%;
+    display:block;
+    margin:auto;
+    margin-top: 50px;
+}
+
+.details .field #fullname {
+    text-transform: capitalize;
+}
+
+.details .field input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    transition-duration: 200ms;
+}
+
+.details .field input:focus::placeholder {
+    transform: translateX(-200px);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  display: none;
+}
+
+.field #verify_num {
+    visibility: hidden;
+}
+
+.registerr h2 {
+    text-align: center;
+}
+
+/* .registerr .detail .details .field .num_submit {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0px;
+    width: fit-content;
+    margin-left: 2px;
+    margin-top: 2px;
+    text-align: left;
+    background: transparent;
+    cursor: pointer;
+} */
+
+.registerr .detail .details .field #verify_num {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0px;
+    width: fit-content;
+    margin-left: 2px;
+    margin-top: 2px;
+    text-align: left;
+    background: transparent;
+    cursor: pointer;
+}
+
+.registerr form select {
+    font-stretch: ultra-expanded;
+    font-weight: bold;
+    text-align: center;
+    padding: 11px 15px 13px;
+}
+    

@@ -1,0 +1,215 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    /* background-color: #3C57AC; */
+    position: relative;
+    height: fit-content;
+}
+
+.container .top-svg{
+    position: fixed;
+    right:0;
+    top: 0;
+    z-index: -1;
+}
+
+.container .bottom-svg{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 35px 5px 30px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 70px; */
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.container .navbar .web-title{
+    display:flex;
+    gap:10px;
+    z-index: 2;
+}
+
+.container .navbar .web-title span{
+    color:white;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.container .navbar .web-title img{
+    width:40px;
+    height:40px;
+    margin-top: 10px;
+    z-index: 2;
+} 
+
+.container .navbar .web-title .menu{
+    font-size: 30px;
+    margin-top: 12px;
+    margin-inline-start: -20px;
+    margin-right: 20px;
+    z-index: 2;
+}
+
+.container .navbar .buttons {
+    margin-top: 13px;
+}
+
+.container .navbar .buttons button {
+    padding:6px 20px 8px;
+    border-radius: 20px;
+    /* border: none; */
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-button {
+    padding:6px 25px 8px;
+    background-color: transparent;
+    color: white;    
+    /* border:1.7px solid white; */
+} 
+
+.login-button {
+    padding:6px 25px 8px;
+    background-color: transparent;
+    color: white;    
+    /* border:1.7px solid white; */
+}
+
+.business {
+    padding:6px 25px 8px;
+    background-color: transparent;
+    color: white;    
+    /* border:1.7px solid white; */
+}
+
+ .container .login {
+   text-align: center;
+   width: 25%; 
+   display:block;
+   margin: auto;
+   color:white;
+   margin-top: 70px;
+   /* margin-bottom: -50px; */
+} 
+
+.container .login img{
+    width:100px;
+    height:100px;
+    margin-top: 20px;
+}
+
+.container .login span{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.container form input, .container form select{
+    margin-top: 17px;
+    width:90%;
+    padding: 11px 15px 13px;
+    background-color: transparent;
+    border: 1.8px solid white;
+    border-radius: 8px;
+    outline: none;
+    color:white;
+    font-size: 14px;
+}
+
+.container form select option {
+    background-color: #3C57AC;
+    font-stretch: extra-expanded;
+
+}
+
+.container form select option:hover {
+    box-shadow: 2px 2px 2px black;
+    color: red;
+    
+}
+
+.container form input::placeholder{
+    color:white;
+}
+
+.container form input:focus ::placeholder{
+    color:black
+}
+
+.container .login .submit_btn, .container .registerr button{
+    width:90%;
+    padding:7px 15px 9px;
+    color: #3C57AC;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border:none;
+}
+
+.login form input:focus::placeholder {
+    transform: translateX(-200px);
+}
+
+.login form input::placeholder {
+    transition-duration: 200ms;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+/* .login form #id {
+    border: 2px solid red;
+} */
+
+.registerr #error{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 10px 5px 16px rgba(0, 0, 0, 0.773);
+    text-align: center;
+    line-height: 0px;
+    margin-top: 10;
+}
+
+
+.login #error {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 10px 5px 16px rgba(0, 0, 0, 0.773);
+    text-align: center;
+}
+
+.container .login .forgot_pwd {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;;
+    width: fit-content;
+    cursor: pointer;
+    margin-left: 220px;
+    
+}
